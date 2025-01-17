@@ -1,0 +1,25 @@
+
+*Size: ~2–5 KB*
+
+---
+
+### File: `docs/design.md`
+
+```markdown
+# Design Documentation for Nanokernel-RS
+
+## Architecture
+
+The nanokernel follows a modular design:
+- **Scheduler:** Manages task switching in a simplified round-robin style.
+- **Interrupts:** Provides very basic interrupt handling.
+- **IPC:** Implements placeholder message passing between modules.
+- **Power Management:** Contains stubs for power-related operations.
+- **Architecture Layer:** Abstracts hardware-specific initialization and configuration.
+- **Drivers:** Minimal drivers for timer, UART, and GPIO to interact with hardware.
+
+## Design Considerations
+
+- **Memory Footprint:** The project is `no_std` and aims for a final binary size of 50–150 KB.
+- **Safety:** Rust’s features are leveraged for safety while keeping performance optimal.
+- **Modularity:** Each component is separated into its own module for clarity and ease of maintenance.

@@ -1,0 +1,8 @@
+[build]
+target = "thumbv7m-none-eabi"  # Example target; adjust based on your hardware.
+
+[target.thumbv7m-none-eabi]
+runner = "probe-run"
+rustflags = [
+    "-C", "link-arg=-Tlink.x",
+]

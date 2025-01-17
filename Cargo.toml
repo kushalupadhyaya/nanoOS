@@ -1,0 +1,14 @@
+[package]
+name = "nanokernel-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Master"]
+
+# Disable default features to avoid std.
+[lib]
+crate-type = ["staticlib"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "z"

@@ -1,0 +1,1 @@
+{"rustc":2018134583952713254,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[5561339755107844834,"build_script_build",false,2194792280675691156]],"local":[{"RerunIfChanged":{"output":"thumbv7m-none-eabi/debug/build/nanokernel-rs-30af03316af7decd/output","paths":["link.x"]}}],"rustflags":["-C","link-arg=-Tlink.x"],"config":0,"compile_kind":0}
