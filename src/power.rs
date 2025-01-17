@@ -1,5 +1,4 @@
 // src/power.rs
-#![no_std]
 
 /// Initialize power management routines.
 pub fn init_power() {
@@ -8,5 +7,5 @@ pub fn init_power() {
 
 /// Enter low-power mode (stub).
 pub fn enter_sleep_mode() {
-    // In a real device, set registers to reduce power.
+    // Set registers or peripherals to reduce power usage.
 }

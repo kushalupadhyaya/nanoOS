@@ -1,13 +1,12 @@
 // src/drivers/timer.rs
-#![no_std]
 
 /// Initialize timer hardware.
 pub fn init_timer() {
-    // Stub: configure a hardware timer.
+    // Configure a hardware timer (stub implementation).
 }
 
 /// Read current timer value.
 pub fn current_time() -> u32 {
-    // Return a dummy value.
+    // Return a dummy timer value.
     0
 }

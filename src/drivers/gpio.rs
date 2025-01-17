@@ -1,9 +1,8 @@
 // src/drivers/gpio.rs
-#![no_std]
 
 /// Set the state of a GPIO pin.
 pub fn set_gpio(pin: u8, value: bool) {
-    let _ = (pin, value); // Stub: set GPIO output.
+    let _ = (pin, value); // Stub: set GPIO pin state.
 }
 
 /// Read the state of a GPIO pin.

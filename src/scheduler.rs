@@ -1,5 +1,4 @@
 // src/scheduler.rs
-#![no_std]
 
 static mut CURRENT_TASK: u32 = 0;
 
@@ -13,9 +12,9 @@ pub fn init_scheduler() {
 
 /// Minimal context switch (stub implementation).
 pub fn context_switch() {
-    // In a complete implementation, switch task context.
+    // In a complete implementation, switch task contexts.
     unsafe {
-        CURRENT_TASK = (CURRENT_TASK + 1) % 10; // Simulate round-robin.
+        CURRENT_TASK = (CURRENT_TASK + 1) % 10; // Simulate round-robin scheduling.
     }
 }
 
